@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מגן האסטרואידים - דילמת הג'זריום</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="mainCanvas"></canvas>
+        <canvas id="laserCanvas"></canvas>
+        <canvas id="timeVortexCanvas"></canvas>
+        
+        <div id="ui">
+            <div id="topBar">
+                <div id="jezriumCounter">
+                    <div class="jezrium-title">גבישי ג'זריום סגולים</div>
+                    <div class="jezrium-display">
+                        <div id="jezriumCrystalsContainer"></div>
+                    </div>
+                </div>
+                
+                <div id="threatMeter">
+                    <span>רמת איום: </span>
+                    <span id="threatLevel"></span>
+                </div>
+            </div>
+            
+            <button id="fireButton"></button>
+            
+            <div id="linearGraphContainer" class="graphContainer">
+                <div class="graphTitle">תועלת שולית - סולם ליניארי</div>
+                <canvas id="linearGraphCanvas" class="graphCanvas"></canvas>
+            </div>
+            
+            <div id="logGraphContainer" class="graphContainer">
+                <div class="graphTitle">תועלת שולית - סולם לוגריתמי</div>
+                <canvas id="logGraphCanvas" class="graphCanvas"></canvas>
+            </div>
+            
+            <div id="message">
+                <p id="messageText"></p>
+                <div id="messageButtons"></div>
+            </div>
+            <div id="logGraphMessage" class="graphMessage">
+                <p id="logGraphMessageText"></p>
+                <button id="logGraphMessageButton"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
